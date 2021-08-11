@@ -5,11 +5,13 @@ export class About extends Component {
     render() {
         return (
             <div>
+                
                 <img style={{width:"100%",height:"75vh"}} src={about}/>
                 
+               
             </div>
         )
     }
 }
 
-export default About
+export default About;

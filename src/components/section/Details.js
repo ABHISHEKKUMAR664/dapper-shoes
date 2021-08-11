@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
-import { DataContext } from '../Context'
-import { Link } from 'react-router-dom'
+import {DataContext} from '../Context'
+import {Link} from 'react-router-dom'
 import Colors from './Colors'
 import '../css/Details.css'
+
 
 export class Details extends Component {
     static contextType = DataContext;
@@ -24,13 +25,15 @@ export class Details extends Component {
         this.getProduct();
     }
 
+
+
     render() {
         const {product} = this.state;
         const {addCart} = this.context;
         return (
             <>
                 {
-                     product.map(item =>(
+                    product.map(item =>(
                         <div className="details" key={item._id}>
                             <img src={item.src} alt=""/>
                             <div className="box">
@@ -47,7 +50,6 @@ export class Details extends Component {
                             </div>
                         </div>
                     ))
-   
                 }
             </>
         )
