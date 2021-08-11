@@ -2,15 +2,18 @@ import "./App.css";
 import React from "react";
 import { DataProvider } from "./components/Context";
 import {BrowserRouter as Router } from "react-router-dom";
+import Header from "./components/Header";
+import Section from "./components/Section";
 
 class App extends React.Component {
   render() {
     return (
       <DataProvider>
         <div className="App">
-          <h1>gg</h1>
+          
           <Router>
-                
+               <Header/> 
+               <Section/>
           </Router>
 
         </div>
